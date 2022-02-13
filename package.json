@@ -3,13 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open --port 8081",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.25.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "element-ui": "^2.15.6",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "js-base64": "^3.7.2",
+    "js-cookie": "^3.0.1",
+    "less": "^3.13.1",
+    "less-loader": "^5.0.0",
+    "nprogress": "^0.2.0",
+    "qs": "^6.10.2",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.4.0",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
