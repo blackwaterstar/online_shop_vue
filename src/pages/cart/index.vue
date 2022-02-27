@@ -29,14 +29,6 @@
           ><span>&nbsp;/总共{{ cartItemTotal }}</span>
         </li>
         <li>
-<!--          <el-button-->
-<!--            type="success"-->
-<!--            size="mini"-->
-<!--            round-->
-<!--            :disabled="totalPrice === 0"-->
-<!--            @click="handleSummit"-->
-<!--            >提交订单</el-button-->
-<!--          >-->
           <el-button type="success" @click="dialogFormVisible = true">提交订单</el-button>
           <el-dialog title="收货信息" :visible.sync="dialogFormVisible" append-to-body="false">
             <el-form :model="form" :rules="rules" ref="form">
@@ -136,9 +128,6 @@ export default {
         }
       });
 
-      // this.cartItems = this.cartItems.filter((cartItem) => {
-      //   return cartItem.cartId !== cartId;
-      // });
     },
     checkAllCartItem(value) {
       this.cartItems.forEach((cartItem) => {

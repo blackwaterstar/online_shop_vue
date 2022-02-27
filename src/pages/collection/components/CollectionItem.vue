@@ -52,9 +52,6 @@ export default {
       let parObj = JSON.stringify(this.product)
       this.$router.push({
         name: "productPanel",
-        // params: {
-        //   product: this.product,
-        // },
         query: {
           'product': parObj
         }

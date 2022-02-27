@@ -1,6 +1,6 @@
 <template>
   <div class="register">
-    <p class="hd-title">秋风网注册</p>
+    <p class="hd-title">注册</p>
     <!-- <div class="summit">
       <form action="">
         <div class="form-box">
@@ -46,7 +46,7 @@
         </el-form-item>
         <el-form-item prop="registerCheck">
           <el-checkbox v-model="form.registerCheck"
-            >已阅读并同意以下协议秋风平台服务协议、隐私权政策、法律声明、支付宝及客户端服务协议</el-checkbox
+            >已阅读并同意以下协议网上书城平台服务协议、隐私权政策、法律声明、支付宝及客户端服务协议</el-checkbox
           >
         </el-form-item>
         <el-form-item>
@@ -147,7 +147,7 @@ export default {
               this.form.msg = "";
               this.$notify({
                 title: "成功",
-                message: "恭喜加入秋风网",
+                message: "恭喜加入网上书城",
                 type: "success",
               });
               this.$router.push("/home/homePanel");
@@ -168,7 +168,7 @@ export default {
 
 <style scoped lang="less">
 .register {
-  background-image: url("../assets/register.png");
+  background-image: url("../assets/bg6.png");
   width: 100%;
   height: 100%;
   background-size: 100%, 100%;

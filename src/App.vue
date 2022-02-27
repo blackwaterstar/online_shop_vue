@@ -62,7 +62,7 @@
     min-width: 1200px;
     height: 50px;
     position: relative;
-    background-color: green;
+    background-color: goldenrod;
     color: ivory;
     font-size: 22px;
     box-shadow: 0px 0px 3px #0d6b29;

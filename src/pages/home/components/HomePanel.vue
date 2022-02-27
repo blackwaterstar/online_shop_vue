@@ -2,7 +2,7 @@
   <div class="content-box clearfix">
     <el-carousel :interval="4000" type="card" height="400px">
       <el-carousel-item v-for="(img, index) in imgArr" :key="index">
-        <img :src="require('@/assets/' + img + '.png')" alt="" />
+        <img :src="require('@/assets/' + img + '.jpg')" alt="" />
       </el-carousel-item>
     </el-carousel>
     <div class="products-box" v-for="product in products" :key="product.pid">
@@ -14,7 +14,6 @@
 <script>
 import ProductItem from "@/components/ProductItem";
 import { apiListProduct } from "@/api/product";
-// import { apiSelectListProductInfo } from "@/api/productInfo";
 export default {
   name: "HomePanel",
   components: {
@@ -23,35 +22,16 @@ export default {
   data() {
     return {
       products: [{ productInfos: [] }],
-      imgArr: ["jxj", "jkl", "iphone10", "acar", "dongfeng"],
+      imgArr: ["0017029120652187_b", "0017029570880188_b", "201010101863484658", "apic3858", "bpic20048"],
     };
   },
   mounted() {
     this.initData();
-    //   let imgList = document.querySelector(".img-list").children;
-    //   let pointList = document.querySelector(".point-list").children;
-    //   for (let i = 0; i < pointList.length; i++) {
-    //     pointList[i].addEventListener("click", () => {
-    //       for (let j = 0; j < pointList.length; j++) {
-    //         if (pointList[j].classList.contains("active")) {
-    //           pointList[j].classList.remove("active");
-    //           imgList[j].classList.remove("active");
-    //         }
-    //       }
-    //       pointList[i].classList.add("active");
-    //       imgList[i].classList.add("active");
-    //     });
-    //   }
   },
   methods: {
     initData() {
       apiListProduct().then((res) => {
         this.products = res.data;
-        // this.products.forEach((product) => {
-        //   apiSelectListProductInfo({ pid: product.pid }).then((res) => {
-        //     product.productInfos = res.data;
-        //   });
-        // });
       });
     },
   },
