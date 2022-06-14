@@ -1,7 +1,7 @@
 <template>
   <div class="cart">
     <div class="content-box clearfix">
-      <div class="content-hd"><a href="javascript;">收藏的商品</a></div>
+      <div class="content-hd"><a href="javascript;">购物车的商品</a></div>
       <div class="content">
         <p><input type="checkbox" name="" v-model="isAllChecked" />全选</p>
         <p style="width: 310px">商品信息</p>

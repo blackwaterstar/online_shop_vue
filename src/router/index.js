@@ -127,7 +127,7 @@ router.beforeEach((to, from, next) => {
             router.push('/login')
         }
     } else {
-        document.title = to.meta.title || "秋风购物";
+        document.title = to.meta.title || "网上书城";
         next();
     }
 
